@@ -1,0 +1,11 @@
+[Unit]
+Description=Wifi Connect Service
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /home/pratz/Desktop/custom_wifi_connect.sh
+WorkingDirectory=/
+Restart=always
+
+[Install]
+WantedBy=default.target
