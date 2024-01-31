@@ -1,6 +1,7 @@
 [Unit]
 Description=Wifi Connect Service
 After=network.target
+RestartSec=5
 
 [Service]
 ExecStart=/bin/bash /home/pratz/Desktop/custom_wifi_connect.sh
